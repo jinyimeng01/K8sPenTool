@@ -1,4 +1,4 @@
-# K8sPenTool
+# K8S-mythos-tool
 
 <p align="center">
   <strong>Industrial Kubernetes Red-Team Detection Workbench</strong><br>
@@ -37,7 +37,7 @@
 
 ## Overview
 
-K8sPenTool is a JavaFX-based Kubernetes security assessment workbench designed for authorized red-team operators and security assessors. It combines traditional offensive utilities with a modern **Advanced Detection** engine that performs:
+K8S-mythos-tool is a JavaFX-based Kubernetes security assessment workbench designed for authorized red-team operators and security assessors. It combines traditional offensive utilities with a modern **Advanced Detection** engine that performs:
 
 - **Read-only** cluster collection and profiling
 - **Risk attribution** across workloads, RBAC, and network exposure
@@ -86,7 +86,7 @@ The Advanced Detection module is the primary industrial-grade assessment workflo
 
 ## Cloud Identity Deep Inspection
 
-K8sPenTool inspects Kubernetes-native signals that frequently lead to cloud control-plane access:
+K8S-mythos-tool inspects Kubernetes-native signals that frequently lead to cloud control-plane access:
 
 ### AWS / EKS
 - IRSA annotations: `eks.amazonaws.com/role-arn`
@@ -186,7 +186,7 @@ src/main/resources/styles/mythos.css
 ## Architecture
 
 ```text
-K8sPenTool/
+K8S-mythos-tool/
 ├── pom.xml                              # Maven build configuration
 ├── start.bat                            # Windows launcher
 ├── .gitignore                           # Git ignore rules
@@ -246,8 +246,8 @@ Java package names remain under `com.k8spen.tool` for compatibility.
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/jinyimeng01/K8sPenTool.git
-cd K8sPenTool
+git clone https://github.com/jinyimeng01/K8S-mythos-tool.git
+cd K8S-mythos-tool
 ```
 
 ### 2. Verify Java Version
@@ -362,7 +362,7 @@ src/test/resources/fixtures/
 
 ## Safety and Authorization Notice
 
-**K8sPenTool is for lawful, authorized security testing only.**
+**K8S-mythos-tool is for lawful, authorized security testing only.**
 
 Some legacy panels can generate or execute high-impact Kubernetes actions, including:
 
