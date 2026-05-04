@@ -178,4 +178,8 @@ public class ControllerContext {
         if (host == null || host.isEmpty()) return null;
         return "https://" + host + ":6443" + path;
     }
+
+    public static void execute(Task<?> task) {
+        new Thread(task).start();
+    }
 }

@@ -1,16 +1,12 @@
-# K8S-mythos-tool
+# K8sPenTool
 
 > Industrial Kubernetes red-team detection workbench for authorized assessment, cloud identity analysis, attack-path reasoning, and full-evidence reporting.
-
-**Author:** T3Y
-
-![Command Execution](img/Snipaste_2026-04-26_18-55-40.jpg)
 
 ---
 
 ## Overview
 
-K8S-mythos-tool is a JavaFX-based Kubernetes security assessment workbench. It combines legacy red-team operator utilities with a modern **Advanced Detection** engine that performs read-only collection, risk attribution, cloud identity analysis, attack-path generation, and exportable evidence reports.
+K8sPenTool is a JavaFX-based Kubernetes security assessment workbench. It combines legacy red-team operator utilities with a modern **Advanced Detection** engine that performs read-only collection, risk attribution, cloud identity analysis, attack-path generation, and exportable evidence reports.
 
 The project is organized as:
 
@@ -66,7 +62,7 @@ HTML reports escape evidence values before rendering. Full Evidence means values
 
 ## Cloud Identity Deep Inspection
 
-K8S-mythos-tool inspects Kubernetes-native signals that often lead to cloud control-plane access:
+K8sPenTool inspects Kubernetes-native signals that often lead to cloud control-plane access:
 
 - **AWS/EKS**: IRSA `eks.amazonaws.com/role-arn`, `AWS_ROLE_ARN`, `AWS_WEB_IDENTITY_TOKEN_FILE`, AWS SDK environment variables, default ServiceAccount IAM role mapping.
 - **GCP/GKE**: Workload Identity `iam.gke.io/gcp-service-account`, Google/GCP SDK environment variables, hostNetwork metadata reachability indicators.
@@ -108,7 +104,7 @@ src/main/resources/styles/mythos.css
 ## Architecture
 
 ```text
-K8S-mythos-tool/
+K8sPenTool/
 ├── pom.xml
 ├── start.bat
 ├── src/main/java/
@@ -202,7 +198,7 @@ Current test coverage includes:
 
 ## Safety and Authorization Notice
 
-K8S-mythos-tool is for lawful, authorized security testing only. Some legacy panels can generate or execute high-impact Kubernetes actions such as command execution helpers, privileged workload YAML, persistence helpers, and credential review workflows.
+K8sPenTool is for lawful, authorized security testing only. Some legacy panels can generate or execute high-impact Kubernetes actions such as command execution helpers, privileged workload YAML, persistence helpers, and credential review workflows.
 
 You are responsible for:
 
